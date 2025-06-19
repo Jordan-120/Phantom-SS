@@ -104,7 +104,7 @@ nav a.active {
 }
 
 #performance-panel {
-  background-image: url('img/MPEngineBay.jpg');
+  background-image: url('img/EngineBay.jpg');
 }
 
 #interior-panel {
@@ -112,7 +112,7 @@ nav a.active {
 }
 
 #exterior-panel {
-  background-image: url('img/carside.png');
+  background-image: url('img/FL-Bridge.jpg');
 }
 
 #audio-panel {
@@ -234,4 +234,75 @@ footer {
   object-fit: cover;
   z-index: -1;
   pointer-events: none;
+}
+
+/* Gallery Page Styles */
+.gallery {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gallery .about-text {
+  margin-bottom: 2rem;
+}
+
+.gallery-img {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.gallery-img img:hover {
+  transform: scale(1.03);
+}
+/* Lightbox Styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.lightbox-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.close:hover {
+  color: #f4b400;
 }
