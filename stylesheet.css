@@ -314,24 +314,29 @@ footer {
 
 .container-contact {
   position: relative;
-  background-color: #303132; /* matching your #contact */
+  overflow: hidden; /* prevents ribbon from spilling outside */
+  background-color: #303132;
   color: #f2f2f2;
   padding: 2rem;
   border-radius: 10px;
   margin: 2rem auto;
   width: 80%;
+  z-index: 0; /* ensures it stays beneath ribbons but above footer */
 }
+
 
 .container-contact .ribbon {
   position: absolute;
   top: 10px;
   right: 10px;
-  background: #303132;
-  color: #303132;
-  padding: 80px 12px;
-  font-weight: bold;
-  border-radius: 6px;
-  font-size: 1rem;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  max-width: 20%;
+  width: auto;
   z-index: 1;
 }
+
+.container-contact .ribbon img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
