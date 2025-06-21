@@ -306,3 +306,32 @@ footer {
 .close:hover {
   color: #f4b400;
 }
+
+.ribbon img {
+    width: 190px;
+    height: auto;
+}
+
+.container-contact {
+  position: relative;
+  background-color: #303132; /* matching your #contact */
+  color: #f2f2f2;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+  width: 80%;
+}
+
+.container-contact .ribbon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #303132;
+  color: #303132;
+  padding: 80px 12px;
+  font-weight: bold;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  z-index: 1;
+}
