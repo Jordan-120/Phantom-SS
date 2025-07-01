@@ -340,3 +340,23 @@ footer {
   display: block;
 }
 
+.sponsor-bubble {
+  position: relative;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+}
+
+.social-icons a {
+  color: #f4b400;
+  margin-left: 10px;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
